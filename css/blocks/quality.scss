@@ -1,0 +1,16 @@
+.quality{
+  background: url('../../images/bg-quallity.jpg') center center / cover no-repeat;
+  position: relative;
+}
+.quality__list{
+  display: flex;
+}
+
+.quality__item{
+  flex:1;
+  margin-right: 36px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
