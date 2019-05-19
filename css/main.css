@@ -309,37 +309,37 @@ template {
 
 @font-face {
   font-family: 'gagalin-regular';
-  src: url("../../fonts/gagalin/gagalin-regular-webfont.woff") format("woff");
+  src: url("../fonts/gagalin/gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'lifehack-medium';
-  src: url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+  src: url("../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/ubuntu/ubuntu-b-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu/ubuntu-b-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/ubuntu/ubuntu-light-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu/ubuntu-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/ubuntu/ubuntu-medium-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu/ubuntu-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/ubuntu/ubuntu-regular-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu/ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -469,7 +469,7 @@ p {
     transform: translate(-50%, -50%); }
 
 .primary {
-  background: url("../../images/main-bg.jpg") center center/cover no-repeat;
+  background: url("../images/main-bg.jpg") center center/cover no-repeat;
   position: relative; }
 
 .primary__container {
@@ -478,14 +478,14 @@ p {
   justify-content: flex-start; }
 
 .quality {
-  background: url("../../images/bg-quallity.jpg") center center/cover no-repeat;
+  background: url("../images/bg-quallity.jpg") center center/cover no-repeat;
   position: relative; }
   @media screen and (max-width: 768px) {
     .quality {
-      background: url("../../images/quality-tablet.jpg") center center/cover no-repeat; } }
+      background: url("../images/quality-tablet.jpg") center center/cover no-repeat; } }
   @media screen and (max-width: 480px) {
     .quality {
-      background: url("../../images/quality-mobile.jpg") center center/cover no-repeat; } }
+      background: url("../images/quality-mobile.jpg") center center/cover no-repeat; } }
 
 .quality__list {
   display: -webkit-box;
@@ -513,7 +513,7 @@ p {
       margin-right: 0; } }
 
 .team {
-  background: url("../../images/team.jpg") center center/cover no-repeat;
+  background: url("../images/team.jpg") center center/cover no-repeat;
   position: relative; }
 
 .team__info {
@@ -551,14 +551,14 @@ p {
       flex-direction: column; } }
 
 .menu-section {
-  background: url("../../images/bg-slider-main.jpg") center center/cover no-repeat;
+  background: url("../images/bg-slider-main.jpg") center center/cover no-repeat;
   position: relative; }
   @media screen and (max-width: 768px) {
     .menu-section {
-      background: url("../../images/bg-slider-tablet.jpg") center center/cover no-repeat; } }
+      background: url("../images/bg-slider-tablet.jpg") center center/cover no-repeat; } }
   @media screen and (max-width: 480px) {
     .menu-section {
-      background: url("../../images/bg-slider-mobile.jpg") center center/cover no-repeat; } }
+      background: url("../images/bg-slider-mobile.jpg") center center/cover no-repeat; } }
 
 .menu-section__title {
   position: absolute;
@@ -566,11 +566,11 @@ p {
   left: 10%; }
 
 .order {
-  background: url("../../images/form-bg.jpg") center center/cover no-repeat;
+  background: url("../images/form-bg.jpg") center center/cover no-repeat;
   position: relative; }
 
 .map {
-  background: url("../../images/map-marker.jpg") center center/cover no-repeat;
+  background: url("../images/map-marker.jpg") center center/cover no-repeat;
   position: relative; }
 
 .header {
@@ -1229,7 +1229,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../../images/checkmark.png") center center no-repeat; }
+  background: url("../images/checkmark.png") center center no-repeat; }
 
 .order-form__checkbox:checked + .order-form__custom::before {
   display: block; }
@@ -1245,7 +1245,7 @@ p {
     background-color: #646261; }
 
 .footer {
-  background: url("../../images/footer-bg.jpg") center center/cover no-repeat;
+  background: url("../images/footer-bg.jpg") center center/cover no-repeat;
   position: absolute;
   width: 100%;
   height: 3.75rem;
@@ -1264,7 +1264,7 @@ p {
   font-size: 0.875rem; }
   @media screen and (max-width: 480px) {
     .footer {
-      background: url("../../images/footer-mobile.jpg") center center/cover no-repeat;
+      background: url("../images/footer-mobile.jpg") center center/cover no-repeat;
       height: 7.25rem; } }
 
 .footer__container {

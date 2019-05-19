@@ -1,5 +1,5 @@
 .footer{
-  background: url('../../images/footer-bg.jpg') center center / cover no-repeat;
+  background: url('../images/footer-bg.jpg') center center / cover no-repeat;
   position: absolute;
   width: 100%;
   height: rem(60px);
@@ -11,7 +11,7 @@
   color:#fff;
   font-size: rem(14px);
   @include phones{
-    background: url('../../images/footer-mobile.jpg') center center / cover no-repeat;
+    background: url('../images/footer-mobile.jpg') center center / cover no-repeat;
     height: rem(116px);
   }
 }

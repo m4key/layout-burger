@@ -1,11 +1,11 @@
 .quality{
-  background: url('../../images/bg-quallity.jpg') center center / cover no-repeat;
+  background: url('../images/bg-quallity.jpg') center center / cover no-repeat;
   position: relative;
   @include tablets{
-    background: url('../../images/quality-tablet.jpg') center center / cover no-repeat;
+    background: url('../images/quality-tablet.jpg') center center / cover no-repeat;
   }
   @include phones{
-    background: url('../../images/quality-mobile.jpg') center center / cover no-repeat;
+    background: url('../images/quality-mobile.jpg') center center / cover no-repeat;
   }
 }
 .quality__list{

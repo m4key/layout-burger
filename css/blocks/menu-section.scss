@@ -1,11 +1,11 @@
 .menu-section{
-  background:url('../../images/bg-slider-main.jpg') center center / cover no-repeat;
+  background:url('../images/bg-slider-main.jpg') center center / cover no-repeat;
   position: relative;
   @include tablets{
-    background:url('../../images/bg-slider-tablet.jpg') center center / cover no-repeat;
+    background:url('../images/bg-slider-tablet.jpg') center center / cover no-repeat;
   }
   @include phones{
-    background:url('../../images/bg-slider-mobile.jpg') center center / cover no-repeat;
+    background:url('../images/bg-slider-mobile.jpg') center center / cover no-repeat;
   }
 }
 
