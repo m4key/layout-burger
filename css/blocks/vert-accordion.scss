@@ -55,11 +55,11 @@
   color: #f9b43b;
 }
 .vert-accordion__item--active .vert-accordion__desc{
-  width: rem(580px);
+  width: rem(500px);
   @include phones{
-    width: rem(362px);
+    width: rem(409px);
   }
   @include phones-small{
     width: rem(270px);
   }
-}
+}    

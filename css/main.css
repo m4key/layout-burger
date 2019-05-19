@@ -1056,10 +1056,10 @@ p {
   color: #f9b43b; }
 
 .vert-accordion__item--active .vert-accordion__desc {
-  width: 36.25rem; }
+  width: 31.25rem; }
   @media screen and (max-width: 480px) {
     .vert-accordion__item--active .vert-accordion__desc {
-      width: 22.625rem; } }
+      width: 25.5625rem; } }
   @media screen and (max-width: 320px) {
     .vert-accordion__item--active .vert-accordion__desc {
       width: 16.875rem; } }
