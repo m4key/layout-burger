@@ -1059,10 +1059,10 @@ p {
   width: 31.25rem; }
   @media screen and (max-width: 480px) {
     .vert-accordion__item--active .vert-accordion__desc {
-      width: 25.5625rem; } }
+      width: 19.5625rem; } }
   @media screen and (max-width: 320px) {
     .vert-accordion__item--active .vert-accordion__desc {
-      width: 16.875rem; } }
+      width: 20.875rem; } }
 
 .order-form {
   display: -webkit-box;

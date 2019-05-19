@@ -57,9 +57,9 @@
 .vert-accordion__item--active .vert-accordion__desc{
   width: rem(500px);
   @include phones{
-    width: rem(409px);
-  }
+    width: rem(313px);
+  }  
   @include phones-small{
-    width: rem(270px);
-  }
+    width: rem(334px);
+  }    
 }    
