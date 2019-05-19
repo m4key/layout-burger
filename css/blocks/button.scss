@@ -1,17 +1,19 @@
 .button{
-  padding:10px 15px;
-  border-radius: 5px;
+  padding:rem(12px) rem(15px);
+  border-radius: rem(5px);
   background-color: #e45028;
   color:#fff;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   display: inline-block;
   text-decoration: none;
   @include ubuntu(medium);
-
+  border: none;
+  outline-color: #e45028;
   &:hover{
     background-color: #ce401a;
+    transition: 0.3s;
   }
 
   &--bg-black{
@@ -19,6 +21,7 @@
 
     &:hover{
       background-color: #1e2021;
+      transition: 0.3s;
     }
   }
 }

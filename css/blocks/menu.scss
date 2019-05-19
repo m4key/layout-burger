@@ -1,10 +1,18 @@
+.menu{
+  @include tablets{
+    display: none;
+  }
+  @include phones{
+    display: none;
+  }
+}
 .menu__list{
 display: flex;
 align-items: center;
 }
 
 .menu__link{
-  font-size: 13px;
+  font-size: rem(13px);
   color:#fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -12,18 +20,18 @@ align-items: center;
 }
 
 .menu__item{
-  margin-right: 12px;
+  margin-right: rem(12px);
   display: flex;
   align-items: center;
 
   &::after{
     content: '';
     display: block;
-    width: 5px;
-    height: 5px;
+    width: rem(5px);
+    height: rem(5px);
     background: #fff;
     border-radius: 50%;
-    margin-left: 12px;
+    margin-left: rem(12px);
   }
 
   &:last-child{

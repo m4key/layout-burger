@@ -1,16 +1,29 @@
 .quality{
   background: url('../../images/bg-quallity.jpg') center center / cover no-repeat;
   position: relative;
+  @include tablets{
+    background: url('../../images/quality-tablet.jpg') center center / cover no-repeat;
+  }
+  @include phones{
+    background: url('../../images/quality-mobile.jpg') center center / cover no-repeat;
+  }
 }
 .quality__list{
   display: flex;
+  @include phones{
+    flex-direction: column;
+  }
 }
 
 .quality__item{
   flex:1;
-  margin-right: 36px;
+  margin-right: rem(36px);
 
   &:last-child{
+    margin-right: 0;
+  }
+  @include phones{
+    display: flex;
     margin-right: 0;
   }
 }

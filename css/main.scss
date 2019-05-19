@@ -1,19 +1,29 @@
 
-
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+$phones-small: 320px;
 //normalize
 @import "_misc/normalize.scss";
 
-
+//media
+@import "_misc/media.scss";
 //setups
+@import "_misc/mixins";
 @import "_misc/fonts";
 @import "_misc/layout";
 
 
 
 //blocks
+@import "blocks/logo.scss";
 @import "blocks/section-nav.scss";
 @import "blocks/primary.scss";
 @import "blocks/quality.scss";
+@import "blocks/team.scss";
+@import "blocks/menu-section.scss";
+@import "blocks/order.scss";
+@import "blocks/map.scss";
 @import "blocks/header.scss";
 @import "blocks/menu.scss";
 @import "blocks/button.scss";
@@ -23,3 +33,8 @@
 @import "blocks/property.scss";
 @import "blocks/reviews.scss";
 @import "blocks/feedback.scss";
+@import "blocks/accordion.scss";
+@import "blocks/vert-accordion.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";
+@import "blocks/hamburger-menu.scss";

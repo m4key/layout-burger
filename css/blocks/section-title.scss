@@ -1,14 +1,19 @@
 .section-title{
-  font-size: 72px;
+  font-size: rem(72px);
   @include gagalin();
-  margin-bottom: 45px;
+  margin-bottom: rem(45px);
   line-height: 1;
   color: #f9b43b;
 
+  @include phones{
+    font-size: rem(60px);
+  }
   &--color-black{
     color:#2f3234;
   }
-
+  &--color-white{
+    color:#fff;
+  }
   &--centered{
     text-align: center;
   }
