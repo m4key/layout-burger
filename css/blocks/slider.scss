@@ -17,9 +17,6 @@
     padding: 0;
     padding-top: rem(75px);
   }
-  @include phones-small{
-    padding-top: 0;
-  }
 }
 .slider__button{
   width: rem(24px);
@@ -52,6 +49,10 @@
   text-align: center;
   align-items: flex-end;
   justify-content: center;
+  @include phones{
+    width: rem(404px);
+    height:rem(263px);
+  }
 }
 .slider__left, .slider__right{
   flex:1;

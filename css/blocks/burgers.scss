@@ -5,8 +5,4 @@
   position: relative;
   flex-direction: row;
   align-items: center;
-  @include tablets{
-    width: 75%;
-    margin: 0 auto;
-  }
 }
