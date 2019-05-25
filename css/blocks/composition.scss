@@ -1,0 +1,68 @@
+.composition{
+  position: absolute;
+  width: rem(90px);
+  height: rem(90px);
+  border-radius: 5px;
+  background-color: #f08c33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include tablets{
+  top: 0;
+  }
+}
+.composition.composition--active{
+  background:#e35028;
+}
+.composition__pic{
+  width: rem(46px);
+  height: rem(44px);
+}
+.composition__text{
+  @include gagalin();
+  font-size: rem(14px);
+  line-height: 2;
+  text-align: center;
+  color: #ffffff;
+}
+.composition__dropdown{
+  display: none;
+  width: 270px;
+  height: 332px;
+  opacity: 0.9;
+  border-radius: rem(5px);
+  background-color: #ffffff;
+  position: absolute;
+}
+.composition__dropdown-pic{
+  width: rem(44px);
+  height: rem(39px);
+}
+.composition__dropdown-img{
+  width: rem(80px);
+  text-align: center;
+}
+.composition__dropdown-row{
+  vertical-align: middle;
+}
+.composition__dropdown-cell{
+  width: rem(100px);
+  font-size: rem(14px);
+  text-align: left;
+  @include ubuntu();
+  font-weight: 500;
+  &:nth-child(3){
+    width: 70px;
+    text-align: right;
+    font-weight: 300;
+    padding-right: 20px;
+  }
+}
+.composition--active .composition__dropdown{
+  display: flex;
+  left: 100%;
+  top: 0;
+  align-items: center;
+}
