@@ -1,0 +1,65 @@
+.vert-accordion{
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.vert-accordion__item {
+  height: 100%;
+  display: flex;
+}
+.vert-accordion__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: rem(40px);
+  width: rem(80px);
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  @include phones{
+    width: rem(40px);
+  }
+  @include phones-small{
+    width: rem(32px);
+    font-size: rem(32px);
+  }
+}
+.vert-accordion__link-text{
+  position: absolute;
+  bottom: rem(40px);
+  left: 50%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateY(-50%);
+  white-space: nowrap;
+  @include gagalin();
+}
+.vert-accordion__desc{
+  font-size: rem(14px);
+  @include ubuntu();
+  display: block;
+  justify-content: center;
+  background-color: rgba(62, 60, 60, 0.7);
+  line-height: rem(24px);
+  color: #fff;
+  overflow: hidden;
+  width: 0;
+
+
+}
+.vert-accordion__text{
+  padding: rem(35px) rem(24px);
+}
+.vert-accordion__item--active .vert-accordion__link {
+  color: #f9b43b;
+}
+.vert-accordion__item--active .vert-accordion__desc{
+  width: rem(500px);
+  @include phones{
+    width: rem(313px);
+  }  
+  @include phones-small{
+    width: rem(334px);
+  }    
+}    
