@@ -1,0 +1,46 @@
+.feedback{
+  position: relative;
+  
+  &:hover{
+    .feedback__hover{
+      opacity: 1;
+    }
+  }
+}
+.feedback__avatar{
+  height: 50vh;
+  overflow: hidden;
+}
+.feedback__pic{
+  object-fit: cover;
+  height: auto;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.feedback__hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#000, .5);
+  padding: 50px 33px 50px 20px;
+  color:#fff;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.feedback__title{
+  @include gagalin();
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.feedback__text{
+  @include ubuntu(light);
+  font-size: 14px;
+  margin-bottom: 17px;
+}

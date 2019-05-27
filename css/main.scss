@@ -1,0 +1,25 @@
+
+
+//normalize
+@import "_misc/normalize.scss";
+
+
+//setups
+@import "_misc/fonts";
+@import "_misc/layout";
+
+
+
+//blocks
+@import "blocks/section-nav.scss";
+@import "blocks/primary.scss";
+@import "blocks/quality.scss";
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/button.scss";
+@import "blocks/info.scss";
+@import "blocks/section-title.scss";
+@import "blocks/down-arrow.scss";
+@import "blocks/property.scss";
+@import "blocks/reviews.scss";
+@import "blocks/feedback.scss";
