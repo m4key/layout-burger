@@ -9,8 +9,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  @include tablets{
   top: 0;
+  @include tablets{
+    left: 15%;
+  }
+  @include phones{
+  left: 0;
   }
 }
 .composition.composition--active{
@@ -35,6 +39,44 @@
   border-radius: rem(5px);
   background-color: #ffffff;
   position: absolute;
+ 
+}
+.composition__dropdown-close{
+  position: absolute;
+  right: rem(28px);
+  top: rem(15px);
+  width: rem(15px);
+  height: rem(15px);
+  cursor: pointer;
+  @include phones-small{
+    right: rem(70px);
+  }
+}
+.composition__dropdown-close-pic{
+  @include tablets{
+    &::after{
+      position: absolute;
+    left: rem(15px);
+    content: ' ';
+    height: rem(25px);
+    width: rem(4px);
+    background-color: #eb8262;
+    border-radius: rem(10px);
+    transform: rotate(-45deg);
+    transition: transform .3s;
+    }
+    &:before{
+      position: absolute;
+    left: rem(15px);
+    content: ' ';
+    height: rem(25px);
+    width: rem(4px);
+    background-color: #eb8262;
+    border-radius: rem(10px);
+    transform: rotate(45deg);
+    transition: transform .3s;
+    }
+  }
 }
 .composition__dropdown-pic{
   width: rem(44px);

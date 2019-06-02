@@ -14,9 +14,12 @@
   }
   @include tablets{
     top: 0;
-    right: 0;
+    right: 15%;
     bottom: auto;
     left: auto;
+  }
+  @include phones{
+    right: 0;
   }
 }
 

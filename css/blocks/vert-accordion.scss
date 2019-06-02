@@ -8,7 +8,7 @@
 .vert-accordion__item {
   height: 100%;
   display: flex;
-}
+} 
 .vert-accordion__link {
   color: #fff;
   text-decoration: none;
@@ -44,8 +44,7 @@
   color: #fff;
   overflow: hidden;
   width: 0;
-
-
+  transition: width 0.4s;
 }
 .vert-accordion__text{
   padding: rem(35px) rem(24px);
@@ -54,7 +53,7 @@
   color: #f9b43b;
 }
 .vert-accordion__item--active .vert-accordion__desc{
-  width: rem(500px);
+  width: rem(580px);
   @include phones{
     width: rem(313px);
   }  
