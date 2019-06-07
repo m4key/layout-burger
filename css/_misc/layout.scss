@@ -67,10 +67,12 @@ p{
   transition: -webkit-transform .7s;
   -o-transition: transform .7s;
   
-  @include phones{
+  @include tablets{
     min-height: initial;
   }
+
 }
+
 .section{
   height: 100vh;
   min-height: 40.625rem;
