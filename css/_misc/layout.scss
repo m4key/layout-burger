@@ -63,9 +63,8 @@ p{
   transition: transform .7s,-webkit-transform .7s;
   will-change: transform;
   -webkit-transition: -webkit-transform .7s;
-    transition: -webkit-transform .7s;
-    -o-transition: transform .7s;
-    transition: transform .7s;
+  transition: -webkit-transform .7s;
+  -o-transition: transform .7s;
 }
 .section{
   height: 100vh;
