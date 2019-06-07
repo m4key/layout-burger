@@ -66,6 +66,7 @@ p{
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   -o-transition: transform .7s;
+  
   @include phones{
     min-height: initial;
   }
