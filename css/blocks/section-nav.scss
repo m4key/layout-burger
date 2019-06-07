@@ -18,6 +18,10 @@
   height: rem(16px);
   margin-bottom: rem(5px);
   cursor: pointer;
+  &--active{
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
 }
 
 .section-nav__link{
@@ -31,11 +35,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-
-  &--active{
-    border: 1px solid #fff;
-  }
-
+  
   &:hover{
     transition: .4s;
     border: 1px solid #fff;
@@ -53,4 +53,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
  }
+}
+
+.section-nav__item--active.section-nav__link{
+  width: 1rem;
+  height: 1rem;
 }

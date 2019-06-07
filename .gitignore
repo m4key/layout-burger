@@ -1,3 +1,6 @@
 *.psd
 *.config
-/_mobile
+/_mobile 
+*.config
+/node_modules *.config
+/src gulpfile.js
