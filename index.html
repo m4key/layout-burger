@@ -15,7 +15,7 @@
         <div class="container primary__container">
           <header class="header">
             <svg class="logo">
-              <use xlink:href="icons/sprite.svg#logo"></use>
+              <use 
             </svg>
             <div class="header__buttons">
               <nav class="menu">
@@ -1042,6 +1042,38 @@
             </div>
           </li>
         </ul>
+      </section>
+      <section class="section video">
+        <div class="container video__container">
+          <h2 class="section-title section-title--color-black section-title--centered">
+            Как мы работаем
+          </h2>
+          <div class="video__player">
+            <video id="player" class="video" poster="./images/photo_player.jpg">
+              <source src="./video/videoplayback.mp4" type="video/mp4">
+            </video>
+            <svg class="play video__player-pic">
+              <use xlink:href="icons/sprite.svg#play"></use>
+            </svg>
+          </div>
+          <div class="video__toolbar">
+            <div class="duration">
+              <svg class="play duration__play">
+                <use xlink:href="icons/sprite.svg#play"></use>
+              </svg>
+              <input type="range" class="duration__range" id="durationLevel" min="0" max="40.128">
+            </div>
+            <div class="sound">
+              <svg class="sound__mic">
+                <use xlink:href="icons/sprite.svg#volume"></use>
+              </svg>
+            
+              <div class="sound__volume">
+                <input type="range" class="sound__range" id="micLevel" min="0" max="10">
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="section order">
         <div class="container">

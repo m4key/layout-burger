@@ -1933,3 +1933,131 @@ p {
   -o-transition: transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s; }
+
+.video {
+  background: url("../images/bg_video.jpg") center center/cover no-repeat; }
+
+.video__container {
+  width: 80%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.video__player {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #3e3e3e; }
+
+.video__player-pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  fill: #fff;
+  opacity: 0.9; }
+
+.video__player-pic--active {
+  opacity: 0; }
+
+#player {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.video__toolbar {
+  height: 35px;
+  width: 100%;
+  background-color: #3e3e3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.duration__play {
+  cursor: pointer;
+  width: 5rem;
+  height: 2.375rem;
+  fill: #626262; }
+
+.duration__range {
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none; }
+
+.duration__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #626262;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%; }
+
+.sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 15px; }
+
+.sound__mic {
+  cursor: pointer;
+  width: 3.125rem;
+  height: 2.375rem; }
+
+.sound__volume {
+  margin-left: 10px;
+  margin-top: -5px; }
+
+.sound__range {
+  width: 58px;
+  height: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 1px;
+  background-color: #626262;
+  outline: none; }
+  .sound__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%; }
