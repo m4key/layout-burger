@@ -85,41 +85,69 @@ const slide = (function () {
 })();
 slide.init();
 
-
 let Ingredients = () => {
+	let slider = document.querySelectorAll('.slider__list');
 	let composition = document.querySelector('.composition');
-	let compositionClose = document.querySelector('.composition__dropdown-close');
-	composition.addEventListener('click', function (e) {
-		e.preventDefault();
-		var target = event.target;
-		let active = document.querySelector('.composition--active');
-		var elem = target.closest('.composition');
-		if (!active) {
-			elem.classList.add('composition--active');
-			// } else {
-			// 	elem.classList.remove('composition--active');
-			// }
-		}
-	});
-	composition.addEventListener('mouseenter', () => {
-		composition.classList.add('composition--active');
-	});
+	let compositionClose = document.querySelector('.composition__dropdown-close-pic');
+	slider.forEach(function (composition) {
+		composition.addEventListener('click', function (e) {
+			e.preventDefault();
+			let active = document.querySelector('.composition.composition--active');
+			if (!active) {
+				composition.classList.add('composition--active');
+			}	else {
+				composition.classList.remove('composition--active');
+			}
+			let disactive=document.querySelector('.composition--active');
+			if (disactive) {
+				let currentMember = e.target.closest('.composition');
+				currentMember.classList.remove('composition--active');
+				currentMember.classList.add('composition--active');
+			}
+		})
 
-	composition.addEventListener('mouseleave', () => {
-		composition.classList.remove('composition--active');
-	});
-	compositionClose.addEventListener('click', e => {
-		e.preventDefault();
-
-		composition.classList.remove('composition--active');
-	});
-	compositionClose.addEventListener('touchstart', e => {
-		e.preventDefault();
-
-		composition.classList.remove('composition--active');
-	});
-}
+	})
+	compositionClose.addEventListener('click', function (e) {
+		if (disactive) {
+			composition.classList.remove('composition--active');
+	}
+})
+};
 Ingredients();
+// let Ingredients = () => {
+// 	let composition = document.querySelector('.composition');
+// 	let compositionClose = document.querySelector('.composition__dropdown-close-pic');
+// 	composition.addEventListener('click', function (e) {
+// 		e.preventDefault();
+// 		var target = event.target;
+// 		let active = document.querySelector('.composition--active');
+// 		var elem = target.closest('.composition');
+// 		if (!active) {
+// 			elem.classList.add('composition--active');
+// 			// } else {
+// 			// 	elem.classList.remove('composition--active');
+// 			// }
+// 		}
+// 	});
+// 	composition.addEventListener('mouseenter', () => {
+// 		composition.classList.add('composition--active');
+// 	});
+
+// 	composition.addEventListener('mouseleave', () => {
+// 		composition.classList.remove('composition--active');
+// 	});
+// 	compositionClose.addEventListener('click', e => {
+// 		e.preventDefault();
+
+// 		composition.classList.remove('composition--active');
+// 	});
+// 	compositionClose.addEventListener('touchstart', e => {
+// 		e.preventDefault();
+
+// 		composition.classList.remove('composition--active');
+// 	});
+// }
+// Ingredients();
 
 //   $('.composition__dropdown').on('click', function (e) {
 
