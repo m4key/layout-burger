@@ -607,9 +607,16 @@ p {
   background: url("../images/form-bg.jpg") center center/cover no-repeat;
   position: relative; }
 
+.contact {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
 .map {
-  background: url("../images/map-marker.jpg") center center/cover no-repeat;
-  position: relative; }
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .header {
   display: -webkit-box;

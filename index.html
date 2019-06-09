@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="wrapper">
     <div class="content">
@@ -15,7 +16,7 @@
         <div class="container primary__container">
           <header class="header">
             <svg class="logo">
-              <use 
+              <use xlink:href="icons/sprite.svg#logo"></use>
             </svg>
             <div class="header__buttons">
               <nav class="menu">
@@ -39,11 +40,12 @@
                     <a href="" class="menu__link" data-scroll-to="6">Как мы работаем</a>
                   </li>
                   <li class="menu__item">
-                    <a href="" class="menu__link" data-scroll-to="7">Контакты</a>
+                    <a href="" class="menu__link" data-scroll-to="8">Контакты</a>
                   </li>
                 </ul>
               </nav>
-              <button type="button" class="button header__order-btn"> Заказать </button>
+              <button data-scroll-to="7" type="button" class="button header__order-btn"> Заказать
+              </button>
             </div>
           </header>
           <div class="info">
@@ -250,7 +252,7 @@
                         рублей
                       </div>
                     </div>
-                    <button type="button" class="button button-buy">
+                    <button data-scroll-to="7" type="button" class="button button-buy">
                       Заказать
                     </button>
                   </div>
@@ -373,7 +375,7 @@
                         рублей
                       </div>
                     </div>
-                    <button type="button" class="button button-buy">
+                    <button data-scroll-to="7" type="button" class="button button-buy">
                       Заказать
                     </button>
                   </div>
@@ -496,7 +498,7 @@
                         рублей
                       </div>
                     </div>
-                    <button type="button" class="button button-buy">
+                    <button data-scroll-to="7" type="button" class="button button-buy">
                       Заказать
                     </button>
                   </div>
@@ -619,7 +621,7 @@
                         рублей
                       </div>
                     </div>
-                    <button type="button" class="button button-buy">
+                    <button data-scroll-to="7" type="button" class="button button-buy">
                       Заказать
                     </button>
                   </div>
@@ -742,7 +744,7 @@
                         рублей
                       </div>
                     </div>
-                    <button type="button" class="button button-buy">
+                    <button data-scroll-to="7" type="button" class="button button-buy">
                       Заказать
                     </button>
                   </div>
@@ -1067,7 +1069,7 @@
               <svg class="sound__mic">
                 <use xlink:href="icons/sprite.svg#volume"></use>
               </svg>
-            
+
               <div class="sound__volume">
                 <input type="range" class="sound__range" id="micLevel" min="0" max="10">
               </div>
@@ -1075,7 +1077,7 @@
           </div>
         </div>
       </section>
-      <section class="section order">
+      <section id="order" class="section order">
         <div class="container">
           <h2 class="section-title section-title--centered">Закажите доставку</h2>
           <form id="main-form" action="" class="order-form">
@@ -1147,7 +1149,8 @@
           </form>
         </div>
       </section>
-      <section class="section map">
+      <section class="section contact">
+        <div id="map" class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <div class="footer__contact">
@@ -1237,7 +1240,7 @@
   </div>
   <a href="#" id="hamburger-menu-link" class="hamburger-menu-link">
     <div class="hamburger-menu-link__button">
-    </div>  
+    </div>
     <div id="popup-menu" class="popup-menu">
       <div class="popup-menu__container">
         <a href="#" class="popup-logo">
@@ -1267,12 +1270,15 @@
               <a href="#" id="link" class="popup-menu__link" data-scroll-to="6">Как мы работаем</a>
             </li>
             <li class="popup-menu__item">
-              <a href="#" id="link" class="popup-menu__link" data-scroll-to="7">Контакты</a>
+              <a href="#" id="link" class="popup-menu__link" data-scroll-to="7">Заказать</a>
+            </li>
+            <li class="popup-menu__item">
+              <a href="#" id="link" class="popup-menu__link" data-scroll-to="8">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
-    </div> 
+    </div>
   </a>
   <div class="modal-review" id="modal-review">
     <div class="modal-review__inner">
@@ -1286,9 +1292,10 @@
       </div>
     </div>
   </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<66e9f3d0-818a-4848-a594-cc44983aad6b>&lang=ru_RU"
+    type="text/javascript">
+    </script>
   <script src="js/app.js"></script>
 </body>
 
 </html>
-
-
