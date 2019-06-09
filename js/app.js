@@ -41,7 +41,7 @@ hamburger({
 const slide = (function () {
 	const left = document.querySelector('.slider__button-prev');
 	const right = document.querySelector('.slider__button-next');
-	const slider = document.querySelector('.slider__list');
+	let slider = document.querySelector('.slider__list');
 	const computed = getComputedStyle(slider);
 	let scroll=true;
 	let slwidth = parseInt(computed.width);
@@ -85,40 +85,41 @@ const slide = (function () {
 })();
 slide.init();
 
+
 let Ingredients = () => {
-	let ingredientsButton = document.querySelector('.composition');
-	let ingredientsCloseButton = document.querySelector('.composition__dropdown-close');
+	let composition = document.querySelector('.composition');
+	let compositionClose = document.querySelector('.composition__dropdown-close');
+	composition.addEventListener('click', function (e) {
+		e.preventDefault();
+		var target = event.target;
+		let active = document.querySelector('.composition--active');
+		var elem = target.closest('.composition');
+		if (!active) {
+			elem.classList.add('composition--active');
+			// } else {
+			// 	elem.classList.remove('composition--active');
+			// }
+		}
+	});
+	composition.addEventListener('mouseenter', () => {
+		composition.classList.add('composition--active');
+	});
 
-	ingredientsCloseButton.addEventListener('click', e => {
+	composition.addEventListener('mouseleave', () => {
+		composition.classList.remove('composition--active');
+	});
+	compositionClose.addEventListener('click', e => {
 		e.preventDefault();
 
-		ingredientsButton.classList.remove('composition--active');
+		composition.classList.remove('composition--active');
 	});
-	ingredientsCloseButton.addEventListener('touchstart', e => {
+	compositionClose.addEventListener('touchstart', e => {
 		e.preventDefault();
 
-	ingredientsButton.classList.remove('composition--active');
+		composition.classList.remove('composition--active');
 	});
-
-	let active = document.querySelector('.composition--active');
-	if (active) {
-		ingredientsButton.addEventListener('click', e => {
-			e.preventDefault();
-		ingredientsButton.classList.add('composition--active');
-		});
-	}
-	ingredientsButton.addEventListener('mouseenter', () => {
-		ingredientsButton.classList.add('composition--active');
-	});
-
-	ingredientsButton.addEventListener('mouseleave', () => {
-		ingredientsButton.classList.remove('composition--active');
-	});
-};
+}
 Ingredients();
-
-// $(function () {
-//   var composition = $('.composition');
 
 //   $('.composition__dropdown').on('click', function (e) {
 
@@ -130,12 +131,12 @@ Ingredients();
 //     }
 //   });
 // });
+
 // const left = document.querySelector('.slider__button-prev');
 // const right = document.querySelector('.slider__button-next');
 // const slider = document.querySelector('.slider__list');
 // var sliderCounter = slider.children.length;
 // let position = parseInt(getComputedStyle(slider).right);
-
 
 // right.addEventListener('click', function () {
 // 	event.preventDefault();
