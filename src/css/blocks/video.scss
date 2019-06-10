@@ -1,5 +1,11 @@
 .video{
   background: url('../images/bg_video.jpg') center center /cover no-repeat;
+  @include tablets{
+    background: url('../images/video-tablet.jpg') center center / cover no-repeat;
+  }
+  @include phones{
+    background: url('../images/video-mobile.jpg') center center / cover no-repeat;
+  }
 }
 .video__container{
   width: 80%;

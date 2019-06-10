@@ -108,7 +108,7 @@ let OnePageScroll = options => {
 		let index = deltaY > 0 ? currentSection + 1 : currentSection - 1;
 
 		slideToSection(index);
-	}, 'touchmove', e => e.preventDefault());
+	});
 
 
 

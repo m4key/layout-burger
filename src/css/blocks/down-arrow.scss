@@ -1,11 +1,13 @@
 .down-arrow{
   width: rem(50px);
   height: rem(50px);
-  margin: 0 auto;
   background-color: transparent;
   border: 0;
   outline: 0;
-  cursor: pointer;
+  cursor: pointer; 
+  position: absolute;
+  bottom: 0;
+  right: 47%;;
 }
 
 .down-arrow__pic{

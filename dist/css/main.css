@@ -384,7 +384,7 @@ p {
   box-sizing: border-box; }
 
 .wrapper {
-  position: relative;
+ /* position: relative;*/
   width: 100%;
   height: 100%;
   overflow: hidden; }
@@ -399,13 +399,14 @@ p {
   -o-transition: transform .7s; }
   @media screen and (max-width: 768px) {
     .content {
-      min-height: initial; } }
+      min-height: initial; } 
+  }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   overflow: hidden; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     .section {
       min-height: initial; } }
 
@@ -735,7 +736,8 @@ p {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 0 18%; } }
+      padding: 0 18%; 
+      padding-bottom: 2.25rem;} }
   @media screen and (max-width: 480px) {
     .info {
       padding: 0 10%; } }
@@ -770,7 +772,7 @@ p {
   padding-top: 5.25rem; }
   @media screen and (max-width: 768px) {
     .info__text {
-      padding-top: 3.25rem;
+      padding-top: 2.25rem;
       width: 100%;
       text-align: center; } }
 
@@ -796,11 +798,13 @@ p {
 .down-arrow {
   width: 3.125rem;
   height: 3.125rem;
-  margin: 0 auto;
   background-color: transparent;
   border: 0;
   outline: 0;
-  cursor: pointer; }
+  cursor: pointer; 
+  position: absolute;
+  bottom: 0;
+  right: 47%;}
 
 .down-arrow__pic {
   width: 2.5rem;
@@ -911,7 +915,7 @@ p {
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .feedback__hover {
-      padding: 2.8125rem 3.5625rem; } }
+      padding: 1rem 3.5625rem; } }
 
 .feedback__title {
   font-family: 'gagalin-regular', Helvetica, sans-serif;
@@ -1946,6 +1950,12 @@ p {
 
 .video {
   background: url("../images/bg_video.jpg") center center/cover no-repeat; }
+  @media screen and (max-width: 768px) {
+    .video {
+      background: url("../images/video-tablet.jpg") center center/cover no-repeat; } }
+  @media screen and (max-width: 480px) {
+    .video {
+      background: url("../images/video-mobile.jpg") center center/cover no-repeat; } }
 
 .video__container {
   width: 80%;
