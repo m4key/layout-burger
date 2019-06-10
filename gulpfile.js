@@ -74,7 +74,7 @@ task('fonts', () => {
 });
 
 task('images', () => {
-  return src('src/images/**/*')
+  return src('src/images/*')
     .pipe(dest('dist/images'));
 });
 
@@ -83,7 +83,7 @@ task('videos', () => {
     .pipe(dest('dist/video'));
 });
 task('icons', () => {
-  return src('src/icons/**/*.svg')
+  return src('src/icons/*.svg')
     .pipe(dest('dist/icons'));
 });
 
