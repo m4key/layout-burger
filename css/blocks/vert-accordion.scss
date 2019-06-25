@@ -19,10 +19,9 @@
   position: relative;
   display: flex;
   @include phones{
-    width: rem(40px);
+    width: rem(48px);
   }
   @include phones-small{
-    width: rem(32px);
     font-size: rem(32px);
   }
 }

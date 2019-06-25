@@ -1,4 +1,4 @@
-.hamburger-menu{
+.hamburger-menu-link{
   display: none;
   width: rem(24px);
   height: rem(22px);
@@ -12,9 +12,7 @@
     right: rem(20px);
   }
 } 
-
-
-.hamburger-menu__button{
+.hamburger-menu-link__button{
   height: rem(4px);
   width: 100%;
   background-color: #fff;
@@ -34,4 +32,18 @@
   &::before{
     top: 0;
   }
+}
+
+.hamburger-menu-link--active .hamburger-menu-link__button{
+  background-color: transparent;
+}
+.hamburger-menu-link--active .hamburger-menu-link__button:before {
+  transform: rotate(-45deg);
+  transition: transform .3s;
+  top: .5625rem;
+}
+.hamburger-menu-link--active .hamburger-menu-link__button:after {
+  transform: rotate(45deg);
+  transition: transform .3s;
+  bottom: .5625rem;
 }

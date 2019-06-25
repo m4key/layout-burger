@@ -8,6 +8,9 @@
   @include phones{
     font-size: rem(60px);
   }
+  @include phones-small{
+    font-size: rem(50px);
+  }
   &--color-black{
     color:#2f3234;
   }
