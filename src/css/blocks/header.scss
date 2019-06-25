@@ -1,0 +1,19 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: rem(12px);
+}
+
+.header__buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__order-btn{
+  margin-left: rem(15px); 
+  @include tablets{
+    margin-right: rem(50px);
+  }
+}

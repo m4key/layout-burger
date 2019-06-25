@@ -1,0 +1,35 @@
+.sound {
+  display: flex;
+  align-items: center;
+  margin:0 15px;
+}
+
+.sound__mic {
+  cursor: pointer;
+  width: rem(50px);
+  height: rem(38px);
+}
+
+.sound__volume {
+  margin-left: 10px;   
+  margin-top: -5px; 
+}
+
+.sound__range{
+  width: 58px;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;   
+  border-radius: 1px;
+  background-color: #626262;
+  outline: none;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;    
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;    
+  }
+}

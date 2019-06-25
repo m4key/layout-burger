@@ -1,0 +1,39 @@
+.property__img{
+display: flex;
+justify-content: center;
+margin: 0 auto;
+margin-bottom: rem(33px);
+width: rem(97px);
+height: rem(89px);
+
+  @include phones{
+    flex-shrink: 0;
+    margin-right: rem(30px);
+    margin-bottom: rem(70px);
+  }
+}
+.property__pic{
+  max-width: 100%;
+  max-height: 100%;
+}
+.property__desc{
+ text-align: center;
+
+  @include phones{
+    text-align: left;
+  }
+}
+.property__title{
+  @include lifehack();
+  font-size: rem(24px);
+  font-weight: 500;
+  margin-bottom: rem(14px);
+  color: #2f3234;
+}
+.property__text{
+  font-size: rem(14px);
+  @include ubuntu(light);
+  opacity: 0.8;
+  color: rgba(47, 50, 52, 0.8);
+  line-height: 1.7;
+}
